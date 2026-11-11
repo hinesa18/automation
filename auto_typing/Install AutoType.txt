@@ -1,0 +1,28 @@
+AutoType — Install on a Mac
+
+Requires macOS 13 Ventura or later. Supports Apple silicon and Intel Macs.
+No Xcode, Python, signing certificate, or Terminal commands are needed to use it.
+
+1. Open the downloaded AutoType disk image.
+2. Drag AutoType onto the Applications shortcut. If updating, quit AutoType first.
+3. Open AutoType from Applications. The app appears as AT in the menu bar.
+4. This friend build is not notarized by Apple. If macOS blocks it, open
+   System Settings > Privacy & Security, scroll to the blocked AutoType notice,
+   click Open Anyway, and confirm. Try opening the app first so the notice appears.
+   Apple's instructions: https://support.apple.com/en-us/102445
+5. Enable AutoType in System Settings > Privacy & Security > Accessibility.
+   Enable Input Monitoring too if requested. Quit and reopen AutoType if needed.
+   Screen capture permission is only needed for the screen-text capture feature.
+6. In a blank TextEdit document, type ==autotype== to open setup, or use AT > Start.
+   Enter a short sample, choose speed, then Start. Escape stops typing and copies
+   the remaining text to your clipboard. Test your intended editor with a short
+   sample before using a longer document.
+
+Keep AutoType in Applications. After an update, you may need to remove and re-add
+AutoType in Accessibility because this release uses an ad-hoc signature.
+
+To quit: AT > Quit. To uninstall: quit, delete Applications/AutoType.app, and
+remove its entries from Privacy & Security. No login item is installed.
+
+This is an initial friend-testing release. Automated checks cover internal
+logic; typing, permissions, and OCR on your Mac still require a live check.
